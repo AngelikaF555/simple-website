@@ -1,0 +1,76 @@
+#motto-sct {
+    padding: 50px;
+    margin: 50px 0;
+    background: URL("img/about-page/image-from-rawpixel-id-4094470-jpeg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#motto {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+#motto-eng {
+    font-size: 24px;
+    margin-top: -35px;
+    font-style: italic;
+}
+
+.trainer-container {
+    display: flex;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+.trainer-container img {
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    float: right;
+    padding: 20px 20px 20px 30px;
+
+}
+
+.trainer {
+    display: inline-block;
+    /* background-color: gray; */
+    padding: 10 10px;
+    width: 25%;
+    margin: 0 auto;
+}¨
+
+.trainer h4 {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.gym-location {
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    
+}
+
+/* vill centrera vertikalt */
+#loc-txt-container {
+    padding: 0 10%;
+    margin: auto 0;
+    
+}
+
+#location-img-container {
+    float: left;
+    margin: 0 5% 0 10%;
+    text-align: center;
+}
+
+.address {
+    margin-top: 20px;
+    text-align: center;
+    
+}
