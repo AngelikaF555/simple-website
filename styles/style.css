@@ -31,9 +31,15 @@ header {
 .introduction {
     font-size: 75px;
     font-family: Impact;
-    text-align: center;
-    margin-top: -75px;
+    height: 300px;
+    display: flex;
+    text-align: center ;
 }
+
+.intro-text {
+    
+}
+
 .content-box {
     background-color: white;
     margin-left: 10%;
