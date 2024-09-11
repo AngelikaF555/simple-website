@@ -18,8 +18,8 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-around;
-    align-items: center; 
-    margin-top: -30px;
+    align-items: center;
+    margin-top: -50px; 
 }
 .home, .aboutus, .contact, .portfolio {
     text-align: center;
