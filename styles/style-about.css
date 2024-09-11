@@ -1,7 +1,20 @@
+#content {
+    margin: 0 10%;
+}
+
+#content h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+#content h2, h3, h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 #motto-sct {
     padding: 50px;
-    margin: 50px 0;
-    background: URL("img/about-page/image-from-rawpixel-id-4094470-jpeg.jpg");
+    margin: 50px -13%; /*borde göra bättre lösning för att få ut bilden ända till kanterna*/
+    background: URL("../img/about-page/image-from-rawpixel-id-4094470-jpeg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,13 +67,13 @@
     margin-top: 5%;
     margin-bottom: 10%;
     
+    
 }
 
 /* vill centrera vertikalt */
 #loc-txt-container {
     padding: 0 10%;
     margin: auto 0;
-    
 }
 
 #location-img-container {
