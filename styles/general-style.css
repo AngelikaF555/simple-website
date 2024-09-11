@@ -11,6 +11,11 @@ body {
     margin-right: 3px;
     background-color: rgb(15, 47, 58);
 }
+.header-assistant {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
 header {
     background-color: rgb(12, 9, 40);
     width: 100%;
@@ -19,7 +24,6 @@ header {
     position: fixed;
     justify-content: space-around;
     align-items: center;
-    margin-top: -50px; 
 }
 .home, .aboutus, .contact, .portfolio {
     text-align: center;
