@@ -1,14 +1,23 @@
+body {
+    background-color: whitesmoke;
+
+}
+
 #content {
     margin: 0 10%;
 }
 
 #content h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
+    font-size: 75px;
 }
 
 #content h2, h3, h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#content h2 {
+    font-style: italic;
 }
 
 #motto-sct {
@@ -34,9 +43,14 @@
     font-style: italic;
 }
 
+#trainers-sct {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 5px 0 40px;
+}
+
 .trainer-container {
     display: flex;
-    /* background-color: aqua; */
     padding: 20px;
 }
 
@@ -53,7 +67,7 @@
     display: inline-block;
     /* background-color: gray; */
     padding: 10 10px;
-    width: 25%;
+    width: 30%;
     margin: 0 auto;
 }¨
 
@@ -66,7 +80,9 @@
     display: inline-block;
     margin-top: 5%;
     margin-bottom: 10%;
-    
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 20px;
     
 }
 
