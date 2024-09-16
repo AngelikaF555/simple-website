@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="styles/general-style.css">
-    <style>
+<style>
         /* General Styling for body */
         body {
             font-family: Arial, sans-serif;
@@ -115,74 +108,3 @@
             margin-bottom: 20px;
         }
     </style>
-</head>
-<body>
-    <header>
-        <a class="button home" href="index.html"><div>Home</div></a>
-        <a class="button aboutus" href="about.html"><div>About Us</div></a>
-        <a class="button contact" href="contact-us.html"><div>Contact Info</div></a>
-        <a class="button portfolio" href="portfolio.html"><div>Portfolio</div></a> 
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-       <!-- Welcome to Our Contact Page -->
-        
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact">
-        <div class="form-container">
-            <h2>Contact Us</h2>
-            <form action="/submit_contact" method="POST">
-                <!-- Name input -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <!-- Email input -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <!-- Telephone input -->
-                <label for="telephone">Telephone:</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" required>
-
-                <!-- Comment Box -->
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
-
-                <!-- Submit Button -->
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        
-    </section>
-
-    <!-- Footer with Navigation Links -->
-    <footer>
-        <div class="foot-info animals">valvegym@yahoo.com</div>
-        <div class="foot-info phone">+46 00 000 00 00</div>
-        <div class="foot-info locations">Isafjordsgatan 30A, 164 40 Kista</div>
-    </footer>
-
-</body>
-</html>
