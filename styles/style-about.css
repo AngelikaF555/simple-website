@@ -1,24 +1,25 @@
-#content {
+main {
     margin: 0 10%;
 }
 
-#content h1 {
+main h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 75px;
 }
 
-#content h2, h3, h4 {
+main h2, h3, h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#content h2 {
+main h2 {
     font-style: italic;
 }
 
 #motto-sct {
-    padding: 75px;
-    margin: 50px -14%; /*borde göra bättre lösning för att få ut bilden ända till kanterna*/
-
+    width: 100vw;
+    margin-left: calc(50% - 50vw); /* Gör att sektionen centrerar med 100% bredd */
+    padding: 75px 0;
+    margin-bottom: 75px; 
     background: URL("../img/about-page/image-from-rawpixel-id-4094470-jpeg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -40,8 +41,9 @@
 
 #motto-eng {
     font-size: 24px;
-    margin-top: -35px;
+    /* margin-top: -35px; lös bättre */
     font-style: italic;
+    line-height: 0.5;
 }
 
 #motto-exp {
@@ -55,7 +57,11 @@
     padding: 20px 5px 0 40px;
 }
 
-.trainer-container {
+#trainers-description {
+    margin-right: 15px;
+}
+
+.trainer-container { /*lös så att det funkar på mobilen*/
     display: flex;
     padding: 20px;
 }
@@ -71,48 +77,107 @@
 
 .trainer {
     display: inline-block;
-    /* background-color: gray; */
     padding: 10 10px;
     width: 30%;
     margin: 0 auto;
-}¨
+}
 
 .trainer h4 {
     font-size: 30px;
     margin-bottom: -10px;
 }
 
+
 .gym-loc-container {
     display: flex;
-    
-    /* display: grid;
-    grid-template-columns: [col1] 0 [col2] 60% [end];
-    grid-template-rows: [row1] 0 [row2] 50px [row3] 40px [last-col] auto; */
-
     margin-top: 5%;
     margin-bottom: 10%;
     background-color: white;
     border-radius: 15px;
-    padding-top: 20px;
-    
-    
+    padding: 30px;   
 }
 
-/* vill centrera vertikalt */
 #loc-txt-container {
     padding: 0 5%;
     margin: auto 0;
+    display: inline-block;
 }
 
 #location-img-container {
-    /* float: left; */
-    margin: 0 0 0 10%;
     text-align: center;
 }
 
 .address {
     margin-top: 20px;
-    /* text-align: center; */
     font-weight: bold;
     
+}
+
+@media screen and (max-width: 1207px) {
+    .trainer-container {
+        display: grid;
+        Grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .trainer img {
+        float: none;
+        padding: 0 auto;
+    }
+
+    .trainer {
+        width: auto;
+    }
+
+    .trainer h4 {
+        margin: 10px;
+    }
+
+    .trainer p {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    .gym-loc-container {
+        display: block;
+    }
+
+    #location-img-container img{
+        display: inline-block;
+        width: 50%;
+        height: 50%;
+        margin: 5% auto;
+        
+    }
+    
+}
+
+@media screen and (max-width: 710px) {
+    .trainer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .trainer {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .trainer img {
+        width: 75px;
+        height: 75px;
+        padding: 0;
+        display: block;
+
+    }
+
+    .trainer h4{
+        font-size: 15px;
+        margin: 0 0 0 5%;
+    }
+
 }
